@@ -30,16 +30,21 @@ public class introd14 {
         int opcion, menu, dni, comision;
         String nombre, apellido;
         menu = 1;
-        System.out.println(
-                "Ingrese la opción de carga de datos: 1.- Datos Predefinidos;  2.- Datos ingresados manualmente.");
-        opcion = teclado.nextInt();
+        /*
+         * System.out.println(
+         * "Ingrese la opción de carga de datos: 1.- Datos Predefinidos;  2.- Datos ingresados manualmente."
+         * );
+         * opcion = teclado.nextInt();
+         * ArrayList<Persona> listaDeAlumnos;
+         * 
+         * if (opcion == 1) {
+         * listaDeAlumnos = cargarDatosPredefinidos();
+         * } else {
+         * listaDeAlumnos = cargarDatosScanner();
+         * }
+         */
         ArrayList<Persona> listaDeAlumnos;
-
-        if (opcion == 1) {
-            listaDeAlumnos = cargarDatosPredefinidos();
-        } else {
-            listaDeAlumnos = cargarDatosScanner();
-        }
+        listaDeAlumnos = cargarDatosScanner();
         while (menu != 100) {
             menu = Integer.parseInt(JOptionPane.showInputDialog("     MENU     " + "\n" +
                     "1.- Ingresar Alumno sin cargar datos " + "\n" +
@@ -77,29 +82,26 @@ public class introd14 {
         }
     }
 
-    static ArrayList<Persona> cargarDatosPredefinidos() {
-        ArrayList<Persona> listadoPersonas = new ArrayList<>();
-        listadoPersonas.add(new Persona("juan", "pacheco", 123, 1));
-        listadoPersonas.add(new Persona("ana", "pacheco", 1234, 2));
-        listadoPersonas.add(new Persona("julia", "perez", 12345, 1));
-        listadoPersonas.add(new Persona("laura", "nicolas", 12, 1));
-        listadoPersonas.add(new Persona("miguel", "tevez", 333, 2));
-        listadoPersonas.add(new Persona("ramiro", "santacruz", 444, 2));
-        listadoPersonas.add(new Persona("amanda", "ferreira", 555, 1));
-        listadoPersonas.add(new Persona("natalia", "razetto", 666, 1));
-        listadoPersonas.add(new Persona("andrea", "migleoti", 777, 3));
-        Persona miPersona = new Persona("andrea", "migleoti", 777, 3);
-
-        return listadoPersonas;
+    /*
+     * static ArrayList<Persona> cargarDatosPredefinidos() {
+     * ArrayList<Persona> listadoPersonas = new ArrayList<>();
+     * listadoPersonas.add(new Persona("juan", "pacheco", 123, 1));
+     * listadoPersonas.add(new Persona("ana", "pacheco", 1234, 2));
+     * listadoPersonas.add(new Persona("julia", "perez", 12345, 1));
+     * listadoPersonas.add(new Persona("laura", "nicolas", 12, 1));
+     * listadoPersonas.add(new Persona("miguel", "tevez", 333, 2));
+     * listadoPersonas.add(new Persona("ramiro", "santacruz", 444, 2));
+     * listadoPersonas.add(new Persona("amanda", "ferreira", 555, 1));
+     * listadoPersonas.add(new Persona("natalia", "razetto", 666, 1));
+     * listadoPersonas.add(new Persona("andrea", "migleoti", 777, 3));
+     * Persona miPersona = new Persona("andrea", "migleoti", 777, 3);
+     * 
+     * return listadoPersonas;
+     * }
+     */
+    static ArrayList<Persona> cargarDatosScanner() {
+        ArrayList<Persona> listaDeAlumnos;
+        return listaDeAlumnos;
     }
-  
-    static ArrayList<Persona> cargarDatosScanner(){
-        // 
-        Ar
-        //  
-        mo  tarea: llenar el
-        // 
-            //todo dentro de un
-            return listadoPersonas;
-}
+
 }
